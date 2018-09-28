@@ -75,7 +75,7 @@ body {
 
   .shrine-drawer {
     @include mdc-drawer-fill-color-accessible(primary);
-    @include mdc-drawer-item-text-ink-color(on-primary);
+    @include mdc-drawer-ink-color(on-primary);
 
     text-transform: uppercase;
 
@@ -118,8 +118,9 @@ body {
     overflow: auto;
 
     .product-list {
-      @include mdc-image-list-standard-columns(4);
+      @include mdc-image-list-masonry-columns(4);
       overflow: auto;
+      padding: 80px 100px 0 100px;
 
       .mdc-image-list__supporting {
         justify-content: center;
